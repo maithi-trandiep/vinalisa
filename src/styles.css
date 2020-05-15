@@ -1,0 +1,22 @@
+.section-contact {
+  background-color: lightyellow;
+}
+
+.section-about {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+}
+
+.section-history {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.section-contact {
+  padding: 20px;
+}
