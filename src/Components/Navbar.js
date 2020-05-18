@@ -24,7 +24,7 @@ export default class Navbar extends Component {
                   <Link
                     className="nav-link"
                     activeClass="active"
-                    to="section1"
+                    to="about"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -37,7 +37,7 @@ export default class Navbar extends Component {
                   <Link
                     className="nav-link"
                     activeClass="active"
-                    to="section2"
+                    to="history"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -50,7 +50,7 @@ export default class Navbar extends Component {
                   <Link
                     className="nav-link"
                     activeClass="active"
-                    to="section3"
+                    to="gallery"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -73,7 +73,7 @@ export default class Navbar extends Component {
                   <Link
                     className="nav-link"
                     activeClass="active"
-                    to="section4"
+                    to="contact"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -82,32 +82,14 @@ export default class Navbar extends Component {
                     Contact
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    activeClass="active"
-                    to="section7"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    Mon compte
-                  </Link>
+                <li className="nav-item dropdown">
+                  <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon compte</a>
+                  <div className="dropdown-menu">
+                    <a className="dropdown-item" href="#">Se connecter</a>
+                    <a className="dropdown-item" href="#">S'inscrire</a>
+                  </div>
                 </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    activeClass="active"
-                    to="section8"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    Panier
-                  </Link>
-                </li>
+                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#compte"><i className="fa fa-shopping-cart"></i></a></li>
               </ul>
             </div>
         </div>

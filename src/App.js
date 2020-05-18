@@ -18,19 +18,19 @@ class App extends Component {
         <Header />
         <About
           title="A propos"
-          id="section1"
+          id="about"
         />
         <History
           title="Histoire"
-          id="section2"
+          id="history"
         />
         <Gallery
           title="Gallery"
-          id="section3"
+          id="gallery"
         />
         <Contact
           title="Contact"
-          id="section4"
+          id="contact"
         />
         <Footer />
       </div>

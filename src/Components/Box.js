@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Box({ title, description, imgUrl }) {
+export default function Box({ title, description, imgUrl, modalHref }) {
   return (
     <div className="col-lg-4 col-sm-6 mb-4">
     <div className="gallery-item">
-        <a className="gallery-link" data-toggle="modal" href="#galleryModal1">
+        <a className="gallery-link" data-toggle="modal" href={modalHref}>
         <div className="gallery-hover">
             <div className="gallery-hover-content"><i className="fa fa-plus fa-3x"></i></div>
         </div>

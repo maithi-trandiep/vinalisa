@@ -1,5 +1,6 @@
 import React from "react";
 import Box from "./Box";
+import Modal from "./Modal.js";
 
 export default function Gallery({ id }) {
   return (
@@ -9,12 +10,19 @@ export default function Gallery({ id }) {
             <h3 className="section-subheading text-muted">Description</h3>
         </div>
         <div className="row">
-            <Box title="Vin1" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
-            <Box title="Vin2" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
-            <Box title="Vin3" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
-            <Box title="Vin4" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
-            <Box title="Vignoble1" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
-            <Box title="Vignoble2" description="Description" imgUrl="./assets/img/raisin_field.jpg" />     
+            <Box modalHref="#modalVin1" title="Vin1" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
+            <Box modalHref="#modalVin2" title="Vin2" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
+            <Box modalHref="#modalVin3" title="Vin3" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
+            <Box modalHref="#modalVin4" title="Vin4" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
+            <Box modalHref="#modalVignoble1" title="Vignoble1" description="Description" imgUrl="./assets/img/raisin_field.jpg" />
+            <Box modalHref="#modalVignoble2" title="Vignoble2" description="Description" imgUrl="./assets/img/raisin_field.jpg" />     
+
+            <Modal id="modalVin1" title="Vin1" intro="Lorem ipsum dolor sit amet consectetur." imgUrl1="./assets/img/close-icon.svg" imgUrl2="./assets/img/raisin_field.jpg" description="Lorem ipsum dolor sit amet consectetur." charac1="abc" charac2="def" charac3="ghi" />
+            <Modal id="modalVin2" title="Vin1" intro="Lorem ipsum dolor sit amet consectetur." imgUrl1="./assets/img/close-icon.svg" imgUrl2="./assets/img/raisin_field.jpg" description="Lorem ipsum dolor sit amet consectetur." charac1="abc" charac2="def" charac3="ghi" />
+            <Modal id="modalVin3" title="Vin1" intro="Lorem ipsum dolor sit amet consectetur." imgUrl1="./assets/img/close-icon.svg" imgUrl2="./assets/img/raisin_field.jpg" description="Lorem ipsum dolor sit amet consectetur." charac1="abc" charac2="def" charac3="ghi" />
+            <Modal id="modalVin4" title="Vin1" intro="Lorem ipsum dolor sit amet consectetur." imgUrl1="./assets/img/close-icon.svg" imgUrl2="./assets/img/raisin_field.jpg" description="Lorem ipsum dolor sit amet consectetur." charac1="abc" charac2="def" charac3="ghi" />
+            <Modal id="modalVignoble1" title="Vignoble1" intro="Lorem ipsum dolor sit amet consectetur." imgUrl1="./assets/img/close-icon.svg" imgUrl2="./assets/img/raisin_field.jpg" description="Lorem ipsum dolor sit amet consectetur." charac1="abc" charac2="def" charac3="ghi" />
+            <Modal id="modalVignoble2" title="Vignoble2" intro="Lorem ipsum dolor sit amet consectetur." imgUrl1="./assets/img/close-icon.svg" imgUrl2="./assets/img/raisin_field.jpg" description="Lorem ipsum dolor sit amet consectetur." charac1="abc" charac2="def" charac3="ghi" />
         </div>
     </div>
   );
