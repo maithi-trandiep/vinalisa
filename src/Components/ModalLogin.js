@@ -58,12 +58,22 @@ export default function ModalLogin () {
                                             <form className="signup-form">
                                                 <div className="form-row">
                                                     <div className="form-group col-md-6">
-                                                    <label htmlFor="inputEmail4">Email</label>
-                                                    <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
+                                                    <label htmlFor="inputFName">Nom</label>
+                                                    <input type="text" className="form-control" id="inputFName" placeholder="Nom" />
                                                     </div>
                                                     <div className="form-group col-md-6">
-                                                    <label htmlFor="inputPassword4">MDP</label>
-                                                    <input type="password" className="form-control" id="inputPassword4" placeholder="Mot de passe" />
+                                                    <label htmlFor="inputLName">Prénom</label>
+                                                    <input type="text" className="form-control" id="inputLName" placeholder="Prénom" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-row">
+                                                    <div className="form-group col-md-6">
+                                                    <label htmlFor="inputEmail">Email</label>
+                                                    <input type="email" className="form-control" id="inputEmail" placeholder="Email" />
+                                                    </div>
+                                                    <div className="form-group col-md-6">
+                                                    <label htmlFor="inputPassword">MDP</label>
+                                                    <input type="password" className="form-control" id="inputPassword" placeholder="Mot de passe" />
                                                     </div>
                                                 </div>
                                                 <div className="form-group">
