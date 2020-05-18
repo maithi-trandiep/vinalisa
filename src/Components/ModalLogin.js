@@ -46,7 +46,9 @@ export default function ModalLogin () {
                                                     <input type="checkbox" className="form-check-input" id="rememberme" />
                                                     <label className="form-check-label" htmlFor="rememberme">Se souvenir de moi</label>
                                                 </div>
-                                                <button type="submit" className="btn btn-primary" style={{marginTop: '20px'}}>Valider</button>
+                                                <div className="d-flex justify-content-center">
+                                                    <button type="submit" className="btn btn-primary" style={{marginTop: '20px', marginBottom: '20px'}}>Valider</button>
+                                                </div>
                                                 <div className="d-flex justify-content-center">
                                                     <a href="#">Mot de passe oublié ?</a>
                                                 </div>
@@ -60,44 +62,31 @@ export default function ModalLogin () {
                                                     <input type="email" className="form-control" id="inputEmail4" placeholder="Email" />
                                                     </div>
                                                     <div className="form-group col-md-6">
-                                                    <label htmlFor="inputPassword4">Password</label>
-                                                    <input type="password" className="form-control" id="inputPassword4" placeholder="Password" />
+                                                    <label htmlFor="inputPassword4">MDP</label>
+                                                    <input type="password" className="form-control" id="inputPassword4" placeholder="Mot de passe" />
                                                     </div>
                                                 </div>
                                                 <div className="form-group">
-                                                    <label htmlFor="inputAddress">Address</label>
-                                                    <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
+                                                    <label htmlFor="inputAddress">Adresse</label>
+                                                    <input type="text" className="form-control" id="inputAddress" placeholder="1 rue de Paris" />
                                                 </div>
                                                 <div className="form-group">
-                                                    <label htmlFor="inputAddress2">Address 2</label>
-                                                    <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+                                                    <label htmlFor="inputAddress2">Adresse 2</label>
+                                                    <input type="text" className="form-control" id="inputAddress2" placeholder="Appartement, Batiment, Etage" />
                                                 </div>
                                                 <div className="form-row">
-                                                    <div className="form-group col-md-6">
-                                                    <label htmlFor="inputCity">City</label>
-                                                    <input type="text" className="form-control" id="inputCity" />
+                                                    <div className="form-group col-md-8">
+                                                        <label htmlFor="inputCity">Ville</label>
+                                                        <input type="text" className="form-control" id="inputCity" />
                                                     </div>
                                                     <div className="form-group col-md-4">
-                                                    <label htmlFor="inputState">State</label>
-                                                    <select id="inputState" className="form-control">
-                                                        <option defaultValue="">Choose...</option>
-                                                        <option>...</option>
-                                                    </select>
-                                                    </div>
-                                                    <div className="form-group col-md-2">
-                                                    <label htmlFor="inputZip">Zip</label>
-                                                    <input type="text" className="form-control" id="inputZip" />
+                                                        <label htmlFor="inputZip">Code postal</label>
+                                                        <input type="text" className="form-control" id="inputZip" />
                                                     </div>
                                                 </div>
-                                                <div className="form-group">
-                                                    <div className="form-check">
-                                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
-                                                    <label className="form-check-label" htmlFor="gridCheck">
-                                                        Check me out
-                                                    </label>
-                                                    </div>
+                                                <div className="d-flex justify-content-center">
+                                                    <button type="submit" className="btn btn-primary">Créer mon compte</button>
                                                 </div>
-                                                <button type="submit" className="btn btn-primary">Sign up</button>
                                             </form>
                                         </div>
                                     </div>
