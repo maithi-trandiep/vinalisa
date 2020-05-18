@@ -20,3 +20,8 @@
 .section-contact {
   padding: 20px;
 }
+
+.signup-form,
+.login-form {
+  margin: 40px;
+}

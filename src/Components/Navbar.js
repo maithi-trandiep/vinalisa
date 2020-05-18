@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Dropdown from './Dropdown';
+
 
 export default class Navbar extends Component {
   scrollToTop = () => {
@@ -82,12 +83,8 @@ export default class Navbar extends Component {
                     Contact
                   </Link>
                 </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mon compte</a>
-                  <div className="dropdown-menu">
-                    <a className="dropdown-item" href="#">Se connecter</a>
-                    <a className="dropdown-item" href="#">S'inscrire</a>
-                  </div>
+                <li className="nav-item">
+                  <Dropdown title="Mon Compte" dropdownItems={[{title: "Se connecter", href: "#modalLogin", useModal: true}, {title: "S'inscrire", href: "#modalLogin", useModal: true}]} />
                 </li>
                 <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#compte"><i className="fa fa-shopping-cart"></i></a></li>
               </ul>

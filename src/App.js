@@ -6,6 +6,7 @@ import About from "./Components/About";
 import History from "./Components/History";
 import Gallery from "./Components/Gallery";
 import Contact from "./Components/Contact";
+import ModalLogin from "./Components/ModalLogin";
 
 import "./App.css";
 import './styles.css';
@@ -32,6 +33,7 @@ class App extends Component {
           title="Contact"
           id="contact"
         />
+        <ModalLogin />
         <Footer />
       </div>
     );
