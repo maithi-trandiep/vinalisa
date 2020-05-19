@@ -7,7 +7,7 @@ export default function GalleryVin ({ id, title, subtitle }) {
                 <h2 className="section-heading text-uppercase">{title}</h2>
                 <h3 className="section-subheading text-muted">{subtitle}</h3>
             </div>
-            <div className="row">
+            <div className="">
                 <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
@@ -16,21 +16,21 @@ export default function GalleryVin ({ id, title, subtitle }) {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                        <img src="./assets/img/raisin_field.jpg" className="d-block w-90" alt="..." />
+                        <img src="./assets/img/raisin_field.jpg" className="d-block w-90 carousel-image" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Vin1</h5>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </div>
                         </div>
                         <div className="carousel-item">
-                        <img src="./assets/img/raisin_field.jpg" className="d-block w-90" alt="..." />
+                        <img src="./assets/img/raisin_field.jpg" className="d-block w-90 carousel-image" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Vin2</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         </div>
                         <div className="carousel-item">
-                        <img src="./assets/img/raisin_field.jpg" className="d-block w-90" alt="..." />
+                        <img src="./assets/img/raisin_field.jpg" className="d-block w-90 carousel-image" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Vin3</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
