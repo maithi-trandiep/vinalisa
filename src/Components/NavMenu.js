@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
 import * as RouterDom from "react-router-dom";
 import Dropdown from './Dropdown';
 
 
-export default class Navbar extends Component {
-  scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+export default class NavMenu extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink-dark" id="mainNav" style={{backgroundColor: 'black'}}>
         <div className="container">
           <a className="navbar-brand" href="#page-top">
             <img className="brand-logo" src="/assets/img/navbar-logo.png" />
@@ -19,64 +15,44 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav text-uppercase ml-auto">        
                 <li className="nav-item">
-                  <Link
+                  <RouterDom.Link
                     className="nav-link"
-                    activeClass="active"
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
+                    to="/about"
                   >
                     À propos
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    activeClass="active"
-                    to="history"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    Histoire
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    activeClass="active"
-                    to="galleryvin"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    Gallery
-                  </Link>
+                  </RouterDom.Link>
                 </li>
                 <li className="nav-item">
                   <RouterDom.Link
                     className="nav-link"
-                    to="/offres"
+                    to="/history"
+                  >
+                    Histoire
+                  </RouterDom.Link>
+                </li>
+                <li className="nav-item">
+                  <RouterDom.Link
+                    className="nav-link"
+                    to="/gallery"
+                  >
+                    Gallery
+                  </RouterDom.Link>
+                </li>
+                <li className="nav-item">
+                  <RouterDom.Link
+                    className="nav-link"
+                    to="/offre"
                   >
                     Offres
                   </RouterDom.Link>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <RouterDom.Link
                     className="nav-link"
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
+                    to="/contact"
                   >
                     Contact
-                  </Link>
+                  </RouterDom.Link>
                 </li>
                 <li className="nav-item">
                   <Dropdown title="Mon Compte" dropdownItems={[{title: "Se connecter", href: "#modalLogin", useModal: true}, {title: "S'inscrire", href: "#modalLogin", useModal: true}]} />

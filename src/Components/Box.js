@@ -12,7 +12,9 @@ export default function Box({ title, description, imgUrl, modalHref }) {
         <div className="gallery-caption">
             <div className="gallery-caption-heading">{title}</div>
             <div className="gallery-caption-subheading text-muted">{description}</div>
+            <button className="btn btn-outline-dark"><i className="fa fa-shopping-cart"></i> Ajouter au panier</button>
         </div>
+
     </div>
     </div>
   );

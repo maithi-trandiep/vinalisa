@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ModalGallery ({ id, title, intro, imgUrl1, imgUrl2, description, charac1, charac2, charac3 }) {
+export default function ModalOffer ({ id, title, intro, imgUrl1, imgUrl2, description, charac1, charac2, charac3 }) {
     return (
         <div className="gallery-modal modal fade" id={id} tabIndex="-1" role="dialog" aria-hidden="true">
             <div className="modal-dialog">

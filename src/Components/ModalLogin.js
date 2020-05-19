@@ -18,7 +18,7 @@ export default function ModalLogin () {
                                     <p>Connectez-vous pour suivre les commandes,
                                     enregistrer la liste de produits préférés,
                                     recevoir de nombreuses offres.</p>
-                                    <img src="/assets/img/account-image.jpg" className="account-image img-fluid" alt="img" />   
+                                    <img src="/assets/img/login-image.png" className="account-image img-fluid" alt="img" />   
                                 </div>
                                 <div className="col-md-8">
                                     <nav>
@@ -37,7 +37,7 @@ export default function ModalLogin () {
                                                     </div>
                                                 </div>
                                                 <div className="form-group row">
-                                                    <label htmlFor="loginPw" className="col-sm-2 col-form-label">MDP</label>
+                                                    <label htmlFor="loginPw" className="col-sm-2 col-form-label">Mot de passe</label>
                                                     <div className ="col-sm-10">
                                                         <input type="password" className="form-control" id="loginPw" placeholder="Entrer votre mot de passe" />
                                                     </div>
@@ -72,8 +72,8 @@ export default function ModalLogin () {
                                                     <input type="email" className="form-control" id="inputEmail" placeholder="Email" />
                                                     </div>
                                                     <div className="form-group col-md-6">
-                                                    <label htmlFor="inputPassword">MDP</label>
-                                                    <input type="password" className="form-control" id="inputPassword" placeholder="Mot de passe" />
+                                                    <label htmlFor="inputPassword">Mot de passe</label>
+                                                    <input type="password" className="form-control" id="inputPassword" placeholder="De 6 à 32 caractères" />
                                                     </div>
                                                 </div>
                                                 <div className="form-group">
@@ -94,8 +94,12 @@ export default function ModalLogin () {
                                                         <input type="text" className="form-control" id="inputZip" />
                                                     </div>
                                                 </div>
+                                                <div className="form-check">
+                                                    <input type="checkbox" className="form-check-input" id="emailOffer" />
+                                                    <label className="form-check-label" htmlFor="emailOffer">Recevoir nos offres par email</label>
+                                                </div>
                                                 <div className="d-flex justify-content-center">
-                                                    <button type="submit" className="btn btn-primary">Créer mon compte</button>
+                                                    <button type="submit" className="btn btn-primary" style={{marginTop: '20px', marginBottom: '20px'}}>Créer mon compte</button>
                                                 </div>
                                             </form>
                                         </div>

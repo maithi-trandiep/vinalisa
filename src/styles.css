@@ -21,7 +21,32 @@
   padding: 20px;
 }
 
+.section-gallery {
+  padding: 3rem 0;
+}
+
 .signup-form,
 .login-form {
   margin: 40px;
 }
+
+.navbar-shrink-dark {
+  background-color: black;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inputcounter {
+  font-size: 16px;
+  margin: 0px 5px;
+  text-align: center;
+  width: 50px;
+}
+
+
+
