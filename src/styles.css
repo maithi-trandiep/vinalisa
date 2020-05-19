@@ -48,6 +48,11 @@ hr {
   width: 50px;
 }
 
+#carouselCaptions {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .carousel-image {
   width: 100%;
 }
