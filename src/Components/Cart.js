@@ -33,13 +33,13 @@ class Cart extends Component {
                             <a href="#">Vin 1</a>
                           </h2>
                         </td>
-                        <td>$17.90</td>
+                        <td>€17.90</td>
                         <td>
                           <div className="input-group  bootstrap-touchspin bootstrap-touchspin-injected">
                             <Counter />
                           </div>
                         </td>
-                        <td>$17.90</td>
+                        <td>€17.90</td>
                       </tr>
 
                       <tr className="product-row">
@@ -53,13 +53,13 @@ class Cart extends Component {
                             <a href="#">Vin 2</a>
                           </h2>
                         </td>
-                        <td>$8.90</td>
+                        <td>€8.90</td>
                         <td>
                           <div className="input-group  bootstrap-touchspin bootstrap-touchspin-injected">
                             <Counter />
                           </div>
                         </td>
-                        <td>$8.90</td>
+                        <td>€8.90</td>
                       </tr>
                     </tbody>
 
@@ -67,11 +67,11 @@ class Cart extends Component {
                       <tr>
                         <td colspan="4" className="clearfix">
                           <div className="float-left">
-                            <a href="category.html" className="btn btn-outline-secondary">Continue Shopping</a>
+                            <a href="category.html" className="btn btn-outline-secondary">Poursuivre vos achats</a>
                           </div>
 
                           <div className="float-right">
-                            <a href="#" className="btn btn-outline-secondary btn-clear-cart">Clear Shopping Cart</a>
+                            <a href="#" className="btn btn-outline-secondary btn-clear-cart">Vider le panier</a>
                           </div>
                         </td>
                       </tr>
@@ -87,29 +87,29 @@ class Cart extends Component {
                       <tbody>
                         <tr>
                           <td>Subtotal</td>
-                          <td>$17.90</td>
+                          <td>€17.90</td>
                         </tr>
 
                         <tr>
                           <td>TVA</td>
-                          <td>$0.00</td>
+                          <td>€0.00</td>
                         </tr>
 
                         <tr>
                           <td>Frais de livraison</td>
-                          <td>$0.00</td>
+                          <td>€0.00</td>
                         </tr>
                       </tbody>
                       <tfoot>
                         <tr>
                           <td>Order Total</td>
-                          <td>$17.90</td>
+                          <td>€17.90</td>
                         </tr>
                       </tfoot>
                     </table>
 
                     <div className="checkout-methods">
-                      <a href="checkout-shipping.html" className="btn btn-block btn-sm btn-primary">Go to Checkout</a>
+                      <a href="checkout-shipping.html" className="btn btn-block btn-sm btn-primary">Passer commande</a>
                     </div>
                 </div>
               </div>
