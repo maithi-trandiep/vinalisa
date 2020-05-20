@@ -62,7 +62,7 @@ class Cart extends Component {
                           </div>
                         </td>
                         <td>€8.90</td>
-                        <td><a href="#" title="Delete product" className="btn-delete"><span className="sr-only">Delete</span><i className="fa fa-trash fa-2x"></i></a></td>
+                        <td><a href="#" title="Delete product" className="btn-delete"><span className="sr-only">Supprimer</span><i className="fa fa-trash fa-2x"></i></a></td>
                       </tr>
                     </tbody>
 
@@ -112,7 +112,7 @@ class Cart extends Component {
                     </table>
 
                     <div className="checkout-methods">
-                      <a href="checkout-shipping.html" className="btn btn-block btn-sm btn-primary">Passer commande</a>
+                      <a href="#" className="btn btn-block btn-sm btn-primary">Passer commande</a>
                     </div>
                 </div>
               </div>
