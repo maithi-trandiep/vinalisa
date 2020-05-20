@@ -52,7 +52,7 @@ hr {
   width: 50px;
 }
 
-#carouselCaptions {
+.carousel-gallery {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -111,4 +111,8 @@ h2.product-title {
   padding: 1.4rem 1.8rem 2.2rem;
   border: 1px solid #ddd;
   background: #fbfbfb;
+}
+
+.btn-delete {
+  color: black;
 }

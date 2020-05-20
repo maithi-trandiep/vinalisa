@@ -1,7 +1,7 @@
 import React from "react";
 import ModalConfirmCart from "./ModalConfirmCart";
 
-export default function Box({ title, description, imgUrl, modalHref }) {
+export default function Box({ id, title, description, imgUrl, modalHref }) {
   return (
     <div className="col-lg-4 col-sm-6 mb-4">
     <div className="gallery-item">
@@ -14,10 +14,9 @@ export default function Box({ title, description, imgUrl, modalHref }) {
             <div className="gallery-caption-heading">{title}</div>
             <div className="gallery-caption-subheading text-muted">{description}</div>
         </div>
-        <div className="btn-action" style={{display: "flex", justifyContent: "center"}}>
-        <button className="btn btn-outline-dark" data-toggle="modal" data-target="#modalConfirmCart"><i className="fa fa-shopping-basket"></i> Ajouter au panier</button>
-        <ModalConfirmCart />
-        </div>
+        <div className="btn-action"></div>
+        <button className="btn btn-outline-dark" data-toggle="modal" data-target={'#modal'+id}><i className="fa fa-shopping-cart"></i> Ajouter au panier</button>
+        <ModalConfirmCart id={'modal'+id} title={title} imgUrl={imgUrl} />
     </div>
     </div>    
   );

@@ -25,6 +25,12 @@ class Home extends Component {
           <GalleryVin
             title="Gallery Vin"
             id="galleryvin"
+            dataItems={[{title: "Vin1", description: "Description 1", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin2", description: "Description 2", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin3", description: "Description 3", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin4", description: "Description 4", imgUrl: "./assets/img/raisin_field.jpg"}]}
+          />
+          <GalleryVin
+            title="Gallery Vin 2"
+            id="galleryvin2"
+            dataItems={[{title: "Vin1", description: "Description 1", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin2", description: "Description 2", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin3", description: "Description 3", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin4", description: "Description 4", imgUrl: "./assets/img/raisin_field.jpg"}]}
           />
           <Contact
             title="Contact"

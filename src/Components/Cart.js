@@ -19,6 +19,7 @@ class Cart extends Component {
                         <th className="price-col">Prix</th>
                         <th className="qty-col">Quantité</th>
                         <th>Sous-total</th>
+                        <th>Supprimer</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -35,11 +36,12 @@ class Cart extends Component {
                         </td>
                         <td>€17.90</td>
                         <td>
-                          <div className="input-group  bootstrap-touchspin bootstrap-touchspin-injected">
+                          <div className="quantity-counter">
                             <Counter />
                           </div>
                         </td>
                         <td>€17.90</td>
+                        <td><a href="#" title="Delete product" className="btn-delete"><span className="sr-only">Delete</span><i className="fa fa-trash fa-2x"></i></a></td>
                       </tr>
 
                       <tr className="product-row">
@@ -55,19 +57,20 @@ class Cart extends Component {
                         </td>
                         <td>€8.90</td>
                         <td>
-                          <div className="input-group  bootstrap-touchspin bootstrap-touchspin-injected">
+                          <div className="quantity-counter">
                             <Counter />
                           </div>
                         </td>
                         <td>€8.90</td>
+                        <td><a href="#" title="Delete product" className="btn-delete"><span className="sr-only">Delete</span><i className="fa fa-trash fa-2x"></i></a></td>
                       </tr>
                     </tbody>
 
                     <tfoot>
                       <tr>
-                        <td colspan="4" className="clearfix">
+                        <td colspan="6" className="clearfix">
                           <div className="float-left">
-                            <a href="category.html" className="btn btn-outline-secondary">Poursuivre vos achats</a>
+                            <a href="/offres" className="btn btn-outline-secondary">Poursuivre vos achats</a>
                           </div>
 
                           <div className="float-right">
@@ -82,11 +85,11 @@ class Cart extends Component {
 
               <div className="col-lg-4">
                 <div className="cart-summary">
-                    <h3>Summary</h3>
+                    <h3>Sommaire</h3>
                     <table className="table table-totals">
                       <tbody>
                         <tr>
-                          <td>Subtotal</td>
+                          <td>Sous-total</td>
                           <td>€17.90</td>
                         </tr>
 
@@ -102,7 +105,7 @@ class Cart extends Component {
                       </tbody>
                       <tfoot>
                         <tr>
-                          <td>Order Total</td>
+                          <td>Total TTC</td>
                           <td>€17.90</td>
                         </tr>
                       </tfoot>
