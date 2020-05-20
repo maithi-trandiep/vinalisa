@@ -24,7 +24,6 @@ class Home extends Component {
           />
           <GalleryVin
             title="Gallery Vin"
-            subtilte="Nos galeries"
             id="galleryvin"
           />
           <Contact

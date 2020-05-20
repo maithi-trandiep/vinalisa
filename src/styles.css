@@ -25,6 +25,10 @@
   padding: 3rem 0;
 }
 
+.section-cart {
+  padding-top: 100px;
+}
+
 .signup-form,
 .login-form {
   margin: 40px;
@@ -57,4 +61,54 @@ hr {
   width: 100%;
 }
 
+a:link {
+  text-decoration: none;
+}
 
+.table.table-cart .product-title {
+  margin-bottom: 0;
+}
+.table.table-cart tr td.product-col {
+  padding: 2rem .8rem 1.8rem 0;
+}
+.table.table-cart tr td.product-col {
+  padding: 2rem .8rem 1.8rem 0;
+}
+.table.table-cart tr td {
+  padding: 2rem 1.5rem;
+  border-top: 1px solid #ccc;
+}
+.table.table-cart tr th, .table.table-cart tr td {
+  vertical-align: middle;
+}
+tbody .product-col {
+  font-size: 0;
+}
+
+.product-col .product-title {
+  display: inline-block;
+  vertical-align: middle;
+  }
+
+h2.product-title {
+  font-size: 1.1rem;
+}
+
+.product-title a {
+  transition: all .3s;
+  color: #252525;
+  text-decoration: none;
+}
+
+.product-image img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+}
+
+.cart-summary {
+  margin-bottom: 2.5rem;
+  padding: 1.4rem 1.8rem 2.2rem;
+  border: 1px solid #ddd;
+  background: #fbfbfb;
+}

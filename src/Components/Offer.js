@@ -5,7 +5,7 @@ import GalleryOffer from "./GalleryOffer";
 class Offer extends Component {
   render() {
     return (
-      <div className="Offre">          
+      <div className="Offer">          
         <NavMenu />
         <GalleryOffer
             title="Offres"

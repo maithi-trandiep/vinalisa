@@ -57,7 +57,7 @@ export default class NavMenu extends Component {
                 <li className="nav-item">
                   <Dropdown title="Mon Compte" dropdownItems={[{title: "Se connecter", href: "#modalLogin", useModal: true}, {title: "S'inscrire", href: "#modalLogin", useModal: true}]} />
                 </li>
-                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#compte"><i className="fa fa-shopping-cart"></i></a></li>
+                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#compte"><i className="fa fa-shopping-basket fa-lg"></i></a></li>
               </ul>
             </div>
         </div>

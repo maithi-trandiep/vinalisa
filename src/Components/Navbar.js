@@ -81,7 +81,14 @@ export default class Navbar extends Component {
                 <li className="nav-item">
                   <Dropdown title="Mon Compte" dropdownItems={[{title: "Se connecter", href: "#modalLogin", useModal: true}, {title: "S'inscrire", href: "#modalLogin", useModal: true}]} />
                 </li>
-                <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#compte"><i className="fa fa-shopping-cart"></i></a></li>
+                <li className="nav-item">
+                  <RouterDom.Link
+                  className="nav-link"
+                  to="/panier"
+                  >
+                    <i className="fa fa-shopping-basket fa-lg"></i>
+                  </RouterDom.Link>
+                </li>
               </ul>
             </div>
         </div>

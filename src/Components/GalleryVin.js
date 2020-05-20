@@ -1,11 +1,12 @@
 import React from "react";
+import CarouselGallery from "./CarouselGallery";
 
-export default function GalleryVin ({ id, title, subtitle }) {
+export default function GalleryVin ({ id }) {
     return (
         <div className="container page-section section-galleryvin" id={id}>
             <div className="text-center">
-                <h2 className="section-heading text-uppercase">{title}</h2>
-                <h3 className="section-subheading text-muted">{subtitle}</h3>
+                <h2 className="section-heading text-uppercase">Gallery Vin</h2>
+                <h3 className="section-subheading text-muted">Nos galleries</h3>
             </div>
             <div className="">
                 <div id="carouselCaptions" className="carousel slide" data-ride="carousel">

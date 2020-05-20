@@ -1,7 +1,8 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import Home from './Home';
-import Offer from './Offer';
+import React from "react"
+import { Switch, Route } from "react-router-dom"
+import Home from "./Home";
+import Offer from "./Offer";
+import Cart from "./Cart";
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -17,6 +18,7 @@ const Main = () => (
       <Route exact path='/gallery' component={Home}/>
       <Route exact path='/contact' component={Home}/>
       <Route path='/offres' component={Offer}/>
+      <Route path='/panier' component={Cart}/>
     </Switch>
   </main>
 )
