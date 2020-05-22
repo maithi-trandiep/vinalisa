@@ -14,7 +14,7 @@ export default class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            <img className="brand-logo" src="/assets/img/navbar-logo.png" />
+            <img alt="logo" className="brand-logo" src="./assets/img/navbar-logo.png" />
           </a>
           <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav text-uppercase ml-auto">        
@@ -79,7 +79,7 @@ export default class Navbar extends Component {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Dropdown title="Mon Compte" dropdownItems={[{title: "Se connecter", href: "#modalLogin", useModal: true}, {title: "S'inscrire", href: "#modalLogin", useModal: true}]} />
+                  <Dropdown title="Mon Compte" dropdownItems={[{title: "Se connecter", link: "", modalId: "#modalLogin", useModal: true}, {title: "S'inscrire", link: "", modalId: "#modalLogin", useModal: true}]} />
                 </li>
                 <li className="nav-item">
                   <RouterDom.Link

@@ -5,7 +5,6 @@ export default function Contact({ id }) {
     <div className="container page-section section-contact" id={id}>
         <div className="text-center">
             <h2 className="section-heading text-uppercase">Contactez-nous</h2>
-            <h3 className="section-subheading text-muted">Ecrire ici</h3>
         </div>
         <form id="contactForm" name="sentMessage" noValidate="novalidate">
             <div className="row align-items-stretch mb-5">

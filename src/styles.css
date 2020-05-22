@@ -22,11 +22,15 @@
 }
 
 .section-gallery {
-  padding: 3rem 0;
+  padding-top: 150px;
 }
 
 .section-cart {
-  padding-top: 100px;
+  padding-top: 150px;
+}
+
+.section-shipping {
+  padding-top: 150px;
 }
 
 .signup-form,
@@ -116,3 +120,43 @@ h2.product-title {
 .btn-delete {
   color: black;
 }
+
+.order-summary {
+  margin-top: 2.5rem;
+  padding: 1.4rem 1.8rem 2.2rem;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+}
+
+.form-shipping .form-group {
+  margin-top: 20px;
+}
+
+.form-shipping .form-group .form-control {
+  margin-bottom: 1.4rem;
+}
+
+.ad-facture {
+  padding-bottom: 9px;
+  font-weight: bold;
+  font-size: 2.1rem;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 0;
+}
+.ad-delivery {
+  padding-bottom: 9px;
+  font-weight: bold;
+  font-size: 2.1rem;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 0;
+}
+
+.accordion:after {
+  font-family: 'FontAwesome';  
+  content: "\f068";
+  float: right; 
+}
+.accordion.collapsed:after {
+  content: "\f067"; 
+}
+

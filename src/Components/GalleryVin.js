@@ -3,8 +3,8 @@ import CarouselItem from "./CarouselItem";
 
 export default class GalleryVin extends Component {
     render() {
-        let listItems = '';
-        let carouselItems = '';
+        let listItems = "";
+        let carouselItems = "";
         if (this.props.dataItems) {
             listItems = this.props.dataItems.map((item, idx) => {
                 return (<li key={idx} data-target={"#carouselCaptions"+this.props.id} data-slide-to={idx} className={idx === 0 ? "active" : ""}></li>)
@@ -30,11 +30,11 @@ export default class GalleryVin extends Component {
                         </div>
                         <a className="carousel-control-prev" href={"#carouselCaptions"+this.props.id} role="button" data-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Previous</span>
+                            <span className="sr-only">Précédent</span>
                         </a>
                         <a className="carousel-control-next" href={"#carouselCaptions"+this.props.id} role="button" data-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Next</span>
+                            <span className="sr-only">Suivant</span>
                         </a>
                     </div>
                 </div>

@@ -48,7 +48,7 @@ class Counter extends Component {
         <div className="counter">
             <button className="btn btn-dark btn-sm fa fa-plus fa-inverse fa-2x" onClick={this.IncrementItem}></button>
             <input className="inputcounter" value={this.state.quantity} onChange={this.handleChange}/>
-            <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick = {this.DecreaseItem}></button>
+            <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.DecreaseItem}></button>
         </div>
       );
     }

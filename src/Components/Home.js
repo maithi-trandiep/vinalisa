@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import Navbar from "./Navbar";
 import About from "./About";
 import Header from "./Header";
@@ -8,10 +9,26 @@ import ModalLogin from "./ModalLogin";
 import GalleryVin from "./GalleryVin";
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showLoginModal: false
+    }
+  }
+  
+  componentDidMount() {
+    const searchParams = new URLSearchParams( this.props.location.search.substring(1) );
+    if(searchParams.get("login") === 'true') {
+      this.setState({showLoginModal: true});
+    }
+    console.log(this.state);
+  }
+
   render() {
     return (
       <div className="Home">
-          <Navbar />
+          <Navbar ref="navBar" />
           <Header />
 
           <About
@@ -36,8 +53,7 @@ class Home extends Component {
             title="Contact"
             id="contact"
           />
-
-          <ModalLogin />
+          <ModalLogin showModal={this.state.showLoginModal} />
       </div>
     );
   }

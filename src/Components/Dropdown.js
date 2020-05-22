@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import * as RouterDom from "react-router-dom";
 
 export default class Dropdown extends Component {
   render() {
     let listItems = '';
     if (this.props.dropdownItems) {
         listItems = this.props.dropdownItems.map((item, idx) => {
-           return (<a className="dropdown-item" key={idx} href={item.href} data-toggle={item.useModal ? 'modal' : ''} data-target={item.useModal ? item.href : ''}>{item.title}</a>)
+           return (<RouterDom.Link className="dropdown-item" key={idx} to={item.link} data-toggle={item.useModal ? 'modal' : ''} data-target={item.useModal ? item.modalId : ''}>{item.title}</RouterDom.Link>)
         });
     }
     return (

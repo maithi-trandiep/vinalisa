@@ -43,6 +43,11 @@ class Cart extends Component {
                         <td>€17.90</td>
                         <td><a href="#" title="Delete product" className="btn-delete"><span className="sr-only">Delete</span><i className="fa fa-trash fa-2x"></i></a></td>
                       </tr>
+                      <tr className="product-deliverydate-row">
+                        <div className="float-left">
+                            <p>Livraison à partir de 19/04/2020</p>
+                        </div>
+                    </tr>
 
                       <tr className="product-row">
                         <td className="product-col">
@@ -64,11 +69,16 @@ class Cart extends Component {
                         <td>€8.90</td>
                         <td><a href="#" title="Delete product" className="btn-delete"><span className="sr-only">Supprimer</span><i className="fa fa-trash fa-2x"></i></a></td>
                       </tr>
+                      <tr className="product-deliverydate-row">
+                        <div className="float-left">
+                          <p>Livraison à partir de 20/04/2020</p>
+                        </div>
+                      </tr>
                     </tbody>
 
                     <tfoot>
                       <tr>
-                        <td colspan="6" className="clearfix">
+                        <td colSpan="6" className="clearfix">
                           <div className="float-left">
                             <a href="/offres" className="btn btn-outline-secondary">Poursuivre vos achats</a>
                           </div>
@@ -112,7 +122,7 @@ class Cart extends Component {
                     </table>
 
                     <div className="checkout-methods">
-                      <a href="#" className="btn btn-block btn-sm btn-primary">Passer commande</a>
+                      <a href="/livraison" className="btn btn-block btn-sm btn-primary">Passer commande</a>
                     </div>
                 </div>
               </div>

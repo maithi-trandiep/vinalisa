@@ -10,7 +10,7 @@ export default class NavMenu extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink-dark" id="mainNav" style={{backgroundColor: 'black'}}>
         <div className="container">
           <a className="navbar-brand" href="#page-top">
-            <img className="brand-logo" src="/assets/img/navbar-logo.png" />
+            <img alt="logo" className="brand-logo" src="/assets/img/navbar-logo.png" />
           </a>
           <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav text-uppercase ml-auto">        

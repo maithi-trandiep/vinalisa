@@ -5,14 +5,14 @@ export default function ModalOffer ({ id, title, intro, imgUrl1, imgUrl2, descri
         <div className="gallery-modal modal fade" id={id} tabIndex="-1" role="dialog" aria-hidden="true">
             <div className="modal-dialog">
                 <div className="modal-content">
-                    <div className="close-modal" data-dismiss="modal"><img src={imgUrl1} /></div>
+                    <div className="close-modal" data-dismiss="modal"><img src={imgUrl1} alt="offer" /></div>
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <div className="modal-body">
                                     <h2 className="text-uppercase">{title}</h2>
                                     <p className="item-intro text-muted">{intro}</p>
-                                    <img className="img-fluid d-block mx-auto" src={imgUrl2} alt="" />
+                                    <img className="img-fluid d-block mx-auto" src={imgUrl2} alt="offer" />
                                     <p>{description}</p>
                                     <ul className="list-inline">
                                         <li>{charac1}</li>

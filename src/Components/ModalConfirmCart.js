@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class ModalConfirmCart extends Component {
   render() {
     return (
-        <div className="confirmcart-modal modal fade" id={this.props.id} tabindex="-1" role="dialog" aria-hidden="true">
+        <div className="confirmcart-modal modal fade" id={this.props.id} tabIndex="-1" role="dialog" aria-hidden="true">
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-body text-center">

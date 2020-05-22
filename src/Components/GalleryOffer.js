@@ -4,7 +4,7 @@ import ModalOffer from "./ModalOffer";
 
 export default function GalleryOffer({ id, title, subtitle }) {
   return (
-    <div className="container page-section section-galery" id={id}>
+    <div className="container page-section section-gallery" id={id}>
         <div className="text-center">
           <h2 className="section-heading text-uppercase">{title}</h2>
           <h3 className="section-subheading text-muted">{subtitle}</h3>
