@@ -34,7 +34,7 @@ class Offer extends Component {
         </div>
       );
     } else {
-      return <Redirect to='/?login=true' />
+      return <Redirect to="/?login=true" />
     }
   }
 }

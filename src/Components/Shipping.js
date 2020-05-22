@@ -10,7 +10,7 @@ class Shipping extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8">
-                            <h3 className="ad-facture">Adress de facturation</h3>
+                            <h3 className="ad-facture">Adresse de facturation</h3>
                             <form className="form-shipping" action="#">
                                     <div className="form-group row">
                                         <div className="col-sm-8">
@@ -68,7 +68,7 @@ class Shipping extends Component {
                                     </div>
                                 </form>
 
-                            <h3 className="ad-delivery">Adress de livraison</h3>
+                            <h3 className="ad-delivery">Adresse de livraison</h3>
                             <form className="form-shipping" action="#">
                                     <div className="form-group row">
                                         <div className="col-sm-8">

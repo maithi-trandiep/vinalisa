@@ -19,17 +19,17 @@ class Home extends Component {
   
   componentDidMount() {
     const searchParams = new URLSearchParams( this.props.location.search.substring(1) );
-    if(searchParams.get("login") === 'true') {
+    if(searchParams.get("login") === "true") {
       this.setState({showLoginModal: true});
     }
   }
 
   componentDidUpdate() {
     if (this.state.showLoginModal) {
-      const items = document.getElementsByClassName('dropdown-item');
+      const items = document.getElementsByClassName("dropdown-item");
       for(var i=0; i<items.length; i++) {
         let target = items[i].dataset.target;
-        if(target === '#modalLogin') {
+        if(target === "#modalLogin") {
           items[i].click();
           break;
         }
@@ -54,12 +54,7 @@ class Home extends Component {
           <GalleryVin
             title="Gallery Vin"
             id="galleryvin"
-            dataItems={[{title: "Vin1", description: "Description 1", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin2", description: "Description 2", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin3", description: "Description 3", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin4", description: "Description 4", imgUrl: "./assets/img/raisin_field.jpg"}]}
-          />
-          <GalleryVin
-            title="Gallery Vin 2"
-            id="galleryvin2"
-            dataItems={[{title: "Vin1", description: "Description 1", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin2", description: "Description 2", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin3", description: "Description 3", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin4", description: "Description 4", imgUrl: "./assets/img/raisin_field.jpg"}]}
+            dataItems={[{title: "Vin1", description: "Ancienne offre", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin2", description: "Actuelle offre", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin3", description: "Actuelle offre", imgUrl: "./assets/img/raisin_field.jpg"}, {title: "Vin4", description: "Prochaine offre", imgUrl: "./assets/img/raisin_field.jpg"}]}
           />
           <Contact
             title="Contact"
