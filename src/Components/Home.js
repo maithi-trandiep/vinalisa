@@ -22,13 +22,25 @@ class Home extends Component {
     if(searchParams.get("login") === 'true') {
       this.setState({showLoginModal: true});
     }
-    console.log(this.state);
+  }
+
+  componentDidUpdate() {
+    if (this.state.showLoginModal) {
+      const items = document.getElementsByClassName('dropdown-item');
+      for(var i=0; i<items.length; i++) {
+        let target = items[i].dataset.target;
+        if(target === '#modalLogin') {
+          items[i].click();
+          break;
+        }
+      }
+    }
   }
 
   render() {
     return (
       <div className="Home">
-          <Navbar ref="navBar" />
+          <Navbar />
           <Header />
 
           <About
