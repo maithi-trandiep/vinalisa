@@ -13,17 +13,10 @@ class App extends Component {
     this.state = {
       user: {}
     };
-
-    this.login = this.login.bind(this);
   }
 
   componentDidMount() {
     // get and set currently logged in user to state
-  }
-
-  // Add a login method
-  login() {
-    
   }
 
   render() {
