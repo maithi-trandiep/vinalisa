@@ -130,11 +130,11 @@ class Shipping extends Component {
                         <div className="col-lg-4">
                             <div className="order-summary">
                                 <h3>Sommaire</h3>
-                                <h4>
-                                    <a data-toggle="collapse" href="#order-cart-section" className="accordion" role="button" aria-expanded="false" aria-controls="order-cart-section">2 produits dans le panier</a>
-                                </h4>
-                            <div className="collapse" id="order-cart-section">
-                                <table className="table table-mini-cart">
+                                    <h4>
+                                        <a data-toggle="collapse" href="#order-cart-section" className="accordion collapsed" role="button" aria-expanded="false" aria-controls="order-cart-section">2 produits dans le panier</a>
+                                    </h4>
+                                    <div className="collapse" id="order-cart-section">
+                                        <table className="table table-mini-cart">
                                     <tbody>
                                         <tr>
                                             <td className="product-col">
@@ -171,7 +171,7 @@ class Shipping extends Component {
                                         </tr>
                                     </tbody>    
                                 </table>
-                            </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
