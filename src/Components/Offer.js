@@ -13,7 +13,7 @@ class Offer extends Component {
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     if (!this.props.user || !this.props.user.isLogged) {
       this.setState({isLogged: false});
     } else {

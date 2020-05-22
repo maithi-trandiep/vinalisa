@@ -55,7 +55,7 @@ export default class NavMenu extends Component {
                   </RouterDom.Link>
                 </li>
                 <li className="nav-item">
-                  <Dropdown title="Mon Compte" dropdownItems={[{title: "Se connecter", href: "#modalLogin", useModal: true}, {title: "S'inscrire", href: "#modalLogin", useModal: true}]} />
+                  <Dropdown title="Mon Compte" dropdownItems={[{title: "Se connecter", link: "", modalId: "#modalLogin", useModal: true}, {title: "S'inscrire", link: "", modalId: "#modalLogin", useModal: true}]} />
                 </li>
                 <li className="nav-item">
                   <RouterDom.Link
