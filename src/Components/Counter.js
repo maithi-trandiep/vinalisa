@@ -54,12 +54,12 @@ class Counter extends Component {
       return (
         <div className="counter input-group">
           <div className="input-group-prepend">
-              <button className="btn btn-dark btn-sm fa fa-plus fa-inverse fa-2x" onClick={this.incrementItem}></button>
+          <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.decreaseItem}></button>
           </div>
-              <input className="inputcounter form-control" value={this.state.quantity} onChange={this.handleChange}/>
+            <input className="inputcounter form-control" value={this.state.quantity} onChange={this.handleChange}/>
           <div className="input-group-append">
-              <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.decreaseItem}></button>
-            </div>
+            <button className="btn btn-dark btn-sm fa fa-plus fa-inverse fa-2x" onClick={this.incrementItem}></button>
+          </div>
         </div>
       );
     }

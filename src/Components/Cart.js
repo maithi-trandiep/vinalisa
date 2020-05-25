@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
-import { removeItem, addQuantity, subtractQuantity } from '../actions/cartActions';
+import { removeItem, removeAll, addQuantity, subtractQuantity } from '../actions/cartActions';
 
 import NavMenu from "./NavMenu";
 import Counter from "./Counter";
@@ -66,7 +66,7 @@ class Cart extends Component {
                           </div>
 
                           <div className="float-right">
-                            <a href="#" className="btn btn-outline-secondary btn-clear-cart">Vider le panier</a>
+                            <a onClick={() => this.props.removeAll()} href="#" className="btn btn-outline-secondary btn-clear-cart">Vider le panier</a>
                           </div>
                         </td>
                       </tr>
@@ -127,6 +127,7 @@ const mapDispatchToProps= (dispatch)=>{
   return {
     addQuant: (id)=>{dispatch(addQuantity(id))},
     subtractQuant: (id)=>{dispatch(subtractQuantity(id))},
+    removeAll: (id)=>{dispatch(removeAll())},
     removeItem: (id)=>{dispatch(removeItem(id))}
   }
 }

@@ -1,4 +1,4 @@
-import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from '../actions/action-types/cart-actions';
+import { ADD_TO_CART, REMOVE_ITEM, REMOVE_ALL, SUB_QUANTITY, ADD_QUANTITY, } from '../actions/action-types/cart-actions';
 
 const initState = {
   items: [
@@ -86,17 +86,11 @@ const cartReducer= (state = initState, action) => {
     }
   }
 
-  if(action.type=== ADD_SHIPPING){
+  if(action.type=== REMOVE_ALL){
     return {
         ...state,
-        total: state.total + 6
-    }
-  }
-
-  if(action.type=== 'SUB_SHIPPING'){
-    return {
-        ...state,
-        total: state.total - 6
+        addedItems: [],
+        total: 0
     }
   }
 
