@@ -1,6 +1,12 @@
 import React, { Component } from "react";
+import History from '../history';
+
 
 class ModalConfirmCart extends Component {
+  handleClick() {
+    History.push('/panier');
+  }
+
   render() {
     return (
         <div className="confirmcart-modal modal fade" id={this.props.id} tabIndex="-1" role="dialog" aria-hidden="true">
@@ -13,7 +19,7 @@ class ModalConfirmCart extends Component {
               </div>
               <div className="modal-footer" style={{display: "flex", justifyContent: "center"}}>
                 <button type="button" className="btn btn-secondary" data-dismiss="modal">Continuer</button>
-                <button type="button" className="btn btn-primary"><a href="/panier" style={{color: "white"}}>Aller au panier</a></button>
+                <button onClick={this.handleClick.bind(this)} type="button" className="btn btn-primary" data-dismiss="modal">Aller au panier</button>
               </div>
             </div>
           </div>

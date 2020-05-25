@@ -15,8 +15,8 @@ class ListOffer extends Component {
     let itemList = this.props.items.map((item, idx) =>{
       return (
         <div className="col-lg-4 col-sm-6 mb-4" key={idx}>
-          <Box id={`box${idx+1}`} id={item.id} modalHref={`#modalVin${idx+1}`} title={item.title} description={item.price} imgUrl={item.imgUrl} addToCart={()=>{this.handleClick(item.id)}} />
-          <ModalOffer id={`modalVin${idx+1}`} title={item.title} intro={item.price} imgUrl1="./assets/img/close-icon.svg" imgUrl2={item.imgUrl} description={item.desc} charac1="abc" charac2="def" charac3="ghi" />
+          <Box id={`box${idx+1}`} id={item.id} modalHref={`#modalVin${idx+1}`} title={item.title} description={`€${item.price}`} imgUrl={item.imgUrl} addToCart={()=>{this.handleClick(item.id)}} />
+          <ModalOffer id={`modalVin${idx+1}`} title={item.title} intro={`€${item.price}`} imgUrl={item.imgUrl} description={item.desc} charac1="abc" charac2="def" charac3="ghi" />
         </div>
       );
     });

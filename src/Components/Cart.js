@@ -6,11 +6,13 @@ import Counter from "./Counter";
 
 class Cart extends Component {
   render() {
+    console.log(this.props);
+
     let addedItems = this.props.items.length ?
       (  
         this.props.items.map((item, idx) =>{
             return (
-              <tr className="product-row">
+              <tr className="product-row" key={idx}>
                 <td className="product-col">
                   <figure className="product-image-container">
                     <a href="#" className="product-image">
@@ -34,7 +36,7 @@ class Cart extends Component {
             )
         })
       ) :  <tr><td colSpan="5"><p style={{textAlign: 'center'}}>Panier vide.</p></td></tr>;
-    console.log(this.props.items);
+    
     return (
       <div className="Cart">          
         <NavMenu />
@@ -81,7 +83,7 @@ class Cart extends Component {
                       <tbody>
                         <tr>
                           <td>Sous-total</td>
-                          <td>€17.90</td>
+                          <td>€{this.props.total}</td>
                         </tr>
 
                         <tr>
@@ -97,7 +99,7 @@ class Cart extends Component {
                       <tfoot>
                         <tr>
                           <td>Total TTC</td>
-                          <td>€17.90</td>
+                          <td>€{this.props.total}</td>
                         </tr>
                       </tfoot>
                     </table>
@@ -117,7 +119,8 @@ class Cart extends Component {
 
 const mapStateToProps = (state)=>{
   return{
-      items: state.addedItems
+      items: state.addedItems,
+      total: state.total
   }
 }
 
