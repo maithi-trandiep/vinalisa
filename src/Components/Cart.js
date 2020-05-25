@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom'
-import { removeItem, removeAll, addQuantity, subtractQuantity } from '../actions/cartActions';
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import { removeItem, removeAll, addQuantity, subtractQuantity } from "../actions/cartActions";
 
 import NavMenu from "./NavMenu";
 import Counter from "./Counter";
@@ -10,7 +10,7 @@ class Cart extends Component {
   render() {
     let addedItems = this.props.items.length ?
       (  
-        this.props.items.map((item, idx) =>{
+        this.props.items.map((item, idx) => {
             return (
               <tr className="product-row" key={idx}>
                 <td className="product-col">
@@ -22,7 +22,7 @@ class Cart extends Component {
                   <h2 className="product-title">
                     <a href="#">{item.title}</a>
                   </h2>
-                  <p className="h6">Livraison à partir de 19/04/2020</p>
+                  <p className="h6">{item.date}</p>
                 </td>
                 <td>€{item.price}</td>
                 <td>
@@ -35,7 +35,7 @@ class Cart extends Component {
               </tr>
             )
         })
-      ) :  <tr><td colSpan="5"><p style={{textAlign: 'center'}}>Panier vide.</p></td></tr>;
+      ) :  <tr><td colSpan="5"><p style={{textAlign: "center"}}>Panier vide.</p></td></tr>;
     
     return (
       <div className="Cart">          
@@ -67,7 +67,7 @@ class Cart extends Component {
                           </div>
 
                           <div className="float-right">
-                            <a onClick={() => this.props.removeAll()} href="#" className="btn btn-outline-secondary btn-clear-cart">Vider le panier</a>
+                            <a onClick={() => this.props.removeAll()} className="btn btn-outline-secondary btn-clear-cart">Vider le panier</a>
                           </div>
                         </td>
                       </tr>

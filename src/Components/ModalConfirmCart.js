@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import History from '../history';
+import History from "../history";
 
 
 class ModalConfirmCart extends Component {
   handleClick() {
-    History.push('/panier');
+    History.push("/panier");
   }
 
   render() {

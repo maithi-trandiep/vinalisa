@@ -1,13 +1,13 @@
-import { ADD_TO_CART, REMOVE_ITEM, REMOVE_ALL, SUB_QUANTITY, ADD_QUANTITY, } from '../actions/action-types/cart-actions';
+import { ADD_TO_CART, REMOVE_ITEM, REMOVE_ALL, SUB_QUANTITY, ADD_QUANTITY, } from "../actions/action-types/cart-actions";
 
 const initState = {
   items: [
-    {id:1, title:'Vin 1', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 110, imgUrl: './assets/img/raisin_field.jpg'},
-    {id:2, title:'Vin 2', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 80, imgUrl: './assets/img/raisin_field.jpg'},
-    {id:3, title:'Vin 3', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 120, imgUrl: './assets/img/raisin_field.jpg'},
-    {id:4, title:'Vin 4', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 260, imgUrl: './assets/img/raisin_field.jpg'},
-    {id:5, title:'Vin 5', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 160, imgUrl: './assets/img/raisin_field.jpg'},
-    {id:6, title:'Vin 6', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 90, imgUrl: './assets/img/raisin_field.jpg'}
+    {id:1, title: "Vin 1", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 110, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 19/04"},
+    {id:2, title: "Vin 2", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 80, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 20/04"},
+    {id:3, title: "Vin 3", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 120, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 21/04"},
+    {id:4, title: "Vin 4", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 260, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 09/04"},
+    {id:5, title: "Vin 5", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 160, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 10/04"},
+    {id:6, title: "Vin 6", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 90, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 15/04"}
   ],
   addedItems:[],
   total: 0
@@ -20,7 +20,7 @@ const cartReducer= (state = initState, action) => {
     let addedItem = state.items.find(item=> item.id === action.id)
 
     //check if the action id exists in the addedItems
-    let existed_item= state.addedItems.find(item=> action.id === item.id)
+    let existed_item = state.addedItems.find(item=> action.id === item.id)
     if(existed_item) {
       addedItem.quantity += 1 
         return {
@@ -41,7 +41,7 @@ const cartReducer= (state = initState, action) => {
     }
   }
   if(action.type === REMOVE_ITEM) {
-    let itemToRemove= state.addedItems.find(item=> action.id === item.id)
+    let itemToRemove = state.addedItems.find(item=> action.id === item.id)
     let new_items = state.addedItems.filter(item=> action.id !== item.id)
     
     //calculating the total
@@ -55,7 +55,7 @@ const cartReducer= (state = initState, action) => {
   }
 
   //INSIDE CART COMPONENT
-  if(action.type=== ADD_QUANTITY) {
+  if(action.type === ADD_QUANTITY) {
     let addedItem = state.items.find(item=> item.id === action.id)
     addedItem.quantity += 1 
     let newTotal = state.total + addedItem.price
@@ -64,10 +64,10 @@ const cartReducer= (state = initState, action) => {
         total: newTotal
     }
   }
-  if(action.type=== SUB_QUANTITY) {  
+  if(action.type === SUB_QUANTITY) {  
     let addedItem = state.items.find(item=> item.id === action.id) 
     //if the qt == 0 then it should be removed
-    if(addedItem.quantity === 1){
+    if(addedItem.quantity === 1) {
       let new_items = state.addedItems.filter(item=>item.id !== action.id)
       let newTotal = state.total - addedItem.price
       return {
@@ -86,7 +86,7 @@ const cartReducer= (state = initState, action) => {
     }
   }
 
-  if(action.type=== REMOVE_ALL){
+  if(action.type === REMOVE_ALL) {
     return {
         ...state,
         addedItems: [],

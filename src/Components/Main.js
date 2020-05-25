@@ -5,7 +5,7 @@ import Offer from "./Offer";
 import Cart from "./Cart";
 import Shipping from "./Shipping";
 
-import { userContext } from '../userContext';
+import { userContext } from "../userContext";
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
