@@ -6,23 +6,28 @@ class Counter extends Component {
       this.state = {
         quantity: 1,
         show: true,
-        max: 10,
+        max: 100,
         min: 0
       };
     }
   
-    IncrementItem = () => {
-        this.setState(prevState => {
-          if(prevState.quantity < 10) {
-            return {
-              quantity: prevState.quantity + 1
-            }
-          } else {
-            return null;
+    incrementItem = () => {
+      this.props.increaseCounter();
+
+      this.setState(prevState => {
+        if(prevState.quantity < 10) {
+          return {
+            quantity: prevState.quantity + 1
           }
-        });
+        } else {
+          return null;
+        }
+      });
     }
-    DecreaseItem = () => {
+
+    decreaseItem = () => {
+      this.props.decreaseCounter();
+
       this.setState(prevState => {
         if(prevState.quantity > 0) {
           return {
@@ -33,11 +38,13 @@ class Counter extends Component {
         }
       });
     }
-    ToggleClick = () => {
+
+    toggleClick = () => {
       this.setState({
         show: !this.state.show
       });
     }
+
     handleChange = (event) => {
       this.setState({quantity: event.target.value});
     }
@@ -47,11 +54,11 @@ class Counter extends Component {
       return (
         <div className="counter input-group">
           <div className="input-group-prepend">
-              <button className="btn btn-dark btn-sm fa fa-plus fa-inverse fa-2x" onClick={this.IncrementItem}></button>
+              <button className="btn btn-dark btn-sm fa fa-plus fa-inverse fa-2x" onClick={this.incrementItem}></button>
           </div>
               <input className="inputcounter form-control" value={this.state.quantity} onChange={this.handleChange}/>
           <div className="input-group-append">
-              <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.DecreaseItem}></button>
+              <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.decreaseItem}></button>
             </div>
         </div>
       );

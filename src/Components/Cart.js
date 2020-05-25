@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
+import { removeItem, addQuantity, subtractQuantity } from '../actions/cartActions';
 
 import NavMenu from "./NavMenu";
 import Counter from "./Counter";
 
 class Cart extends Component {
   render() {
-    console.log(this.props);
-
     let addedItems = this.props.items.length ?
       (  
         this.props.items.map((item, idx) =>{
@@ -27,11 +26,11 @@ class Cart extends Component {
                 <td>€{item.price}</td>
                 <td>
                   <div className="quantity-counter">
-                    <Counter />
+                    <Counter decreaseCounter={() => this.props.subtractQuant(item.id)} increaseCounter={() => this.props.addQuant(item.id)} />
                   </div>
                 </td>
                 <td>€{item.price * item.quantity}</td>
-                <td><a href="#" title="Delete product" className="btn-delete"><span className="sr-only">Delete</span><i className="fa fa-trash fa-2x"></i></a></td>
+                <td><a onClick={() => this.props.removeItem(item.id)} href="#" title="Delete product" className="btn-delete"><span className="sr-only">Delete</span><i className="fa fa-trash fa-2x"></i></a></td>
               </tr>
             )
         })
@@ -124,4 +123,12 @@ const mapStateToProps = (state)=>{
   }
 }
 
-export default connect(mapStateToProps)(Cart)
+const mapDispatchToProps= (dispatch)=>{
+  return {
+    addQuant: (id)=>{dispatch(addQuantity(id))},
+    subtractQuant: (id)=>{dispatch(subtractQuantity(id))},
+    removeItem: (id)=>{dispatch(removeItem(id))}
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart)
