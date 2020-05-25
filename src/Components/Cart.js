@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom'
 import { removeItem, removeAll, addQuantity, subtractQuantity } from '../actions/cartActions';
 
 import NavMenu from "./NavMenu";
@@ -62,7 +63,7 @@ class Cart extends Component {
                       <tr>
                         <td colSpan="6" className="clearfix">
                           <div className="float-left">
-                            <a href="/offres" className="btn btn-outline-secondary">Poursuivre vos achats</a>
+                            <Link to="/offres" className="btn btn-outline-secondary">Poursuivre vos achats</Link>
                           </div>
 
                           <div className="float-right">
