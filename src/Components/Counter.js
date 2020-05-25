@@ -45,10 +45,14 @@ class Counter extends Component {
     render() {
   
       return (
-        <div className="counter">
-            <button className="btn btn-dark btn-sm fa fa-plus fa-inverse fa-2x" onClick={this.IncrementItem}></button>
-            <input className="inputcounter" value={this.state.quantity} onChange={this.handleChange}/>
-            <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.DecreaseItem}></button>
+        <div className="counter input-group">
+          <div className="input-group-prepend">
+              <button className="btn btn-dark btn-sm fa fa-plus fa-inverse fa-2x" onClick={this.IncrementItem}></button>
+          </div>
+              <input className="inputcounter form-control" value={this.state.quantity} onChange={this.handleChange}/>
+          <div className="input-group-append">
+              <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.DecreaseItem}></button>
+            </div>
         </div>
       );
     }

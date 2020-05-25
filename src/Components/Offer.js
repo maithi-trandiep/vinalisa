@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Redirect } from 'react-router-dom';
 
 import NavMenu from "./NavMenu";
-import GalleryOffer from "./GalleryOffer";
+import ListOffer from "./ListOffer";
 
 class Offer extends Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class Offer extends Component {
       return (
         <div className="Offer">          
           <NavMenu />
-          <GalleryOffer
+          <ListOffer
               title="Offres"
               subtitle="Nos actuelles offres"
               id="gallery"
