@@ -179,7 +179,7 @@ class Shipping extends Component {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="action-shipping">
-                                <a href="#" className="btn btn-primary float-left">Confirmer</a>
+                                <a href="#" className="btn btn-primary">Confirmer</a>
                             </div>
                         </div>
                     </div>

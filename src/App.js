@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Footer from "./Components/Footer";
-import Main from "./Components/Main";
+import Footer from "./components/Footer";
+import Main from "./components/Main";
 
 import { userContext } from './userContext';
 

@@ -16,7 +16,7 @@ class ListOffer extends Component {
       return (
         <div className="col-lg-4 col-sm-6 mb-4" key={idx}>
           <Box id={`box${idx+1}`} id={item.id} modalHref={`#modalVin${idx+1}`} title={item.title} description={`€${item.price}`} imgUrl={item.imgUrl} addToCart={()=>{this.handleClick(item.id)}} />
-          <ModalOffer id={`modalVin${idx+1}`} title={item.title} intro={`€${item.price}`} imgUrl={item.imgUrl} description={item.desc} charac1="abc" charac2="def" charac3="ghi" />
+          <ModalOffer id={`modalVin${idx+1}`} title={item.title} intro={`€${item.price}`} imgUrl={item.imgUrl} descField={item.field} descWine={item.wine} descProducer={item.producer} />
         </div>
       );
     });

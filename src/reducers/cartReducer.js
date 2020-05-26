@@ -2,12 +2,12 @@ import { ADD_TO_CART, REMOVE_ITEM, REMOVE_ALL, SUB_QUANTITY, ADD_QUANTITY, } fro
 
 const initState = {
   items: [
-    {id:1, title: "Vin 1", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 110, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 19/04"},
-    {id:2, title: "Vin 2", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 80, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 20/04"},
-    {id:3, title: "Vin 3", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 120, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 21/04"},
-    {id:4, title: "Vin 4", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 260, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 09/04"},
-    {id:5, title: "Vin 5", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 160, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 10/04"},
-    {id:6, title: "Vin 6", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price: 90, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 15/04"}
+    {id:1, title: "Vin 1", field: "Presentation du vignoble", wine: "Presentation du vin", producer: "Presentation du producteur", price: 110, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 19/04"},
+    {id:2, title: "Vin 2", field: "Presentation du vignoble", wine: "Presentation du vin", producer: "Presentation du producteur", price: 200, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 20/04"},
+    {id:3, title: "Vin 3", field: "Presentation du vignoble", wine: "Presentation du vin", producer: "Presentation du producteur", price: 120, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 21/04"},
+    {id:4, title: "Vin 4", field: "Presentation du vignoble", wine: "Presentation du vin", producer: "Presentation du producteur", price: 260, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 09/04"},
+    {id:5, title: "Vin 5", field: "Presentation du vignoble", wine: "Presentation du vin", producer: "Presentation du producteur", price: 160, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 10/04"},
+    {id:6, title: "Vin 6", field: "Presentation du vignoble", wine: "Presentation du vin", producer: "Presentation du producteur", price: 90, imgUrl: "./assets/img/raisin_field.jpg", date: "Livraison à partir de 15/04"}
   ],
   addedItems:[],
   total: 0
