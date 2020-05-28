@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class ModalLogin extends Component {
+export default class ModalLogin extends Component {
     constructor(props) {
         super(props);
     }
@@ -119,5 +119,3 @@ class ModalLogin extends Component {
         )
     }
 }
-
-export default ModalLogin;

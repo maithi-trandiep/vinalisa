@@ -27,11 +27,11 @@ class Cart extends Component {
                 <td>€{item.price}</td>
                 <td>
                   <div className="quantity-counter">
-                    <Counter decreaseCounter={() => this.props.subtractQuant(item.id)} increaseCounter={() => this.props.addQuant(item.id)} />
+                    <Counter decrementCounter={() => this.props.subtractQuant(item.id)} incrementCounter={() => this.props.addQuant(item.id)} />
                   </div>
                 </td>
                 <td>€{item.price * item.quantity}</td>
-                <td><a onClick={() => this.props.removeItem(item.id)} href="#" title="Delete product" className="btn-delete"><span className="sr-only">Delete</span><i className="fa fa-trash fa-2x"></i></a></td>
+                <td><a onClick={() => this.props.removeItem(item.id)} title="Delete product" className="btn-delete"><span className="sr-only">Delete</span><i className="fa fa-trash fa-2x"></i></a></td>
               </tr>
             )
         })

@@ -8,7 +8,7 @@ import Contact from "./Contact";
 import ModalLogin from "./ModalLogin";
 import GalleryVin from "./GalleryVin";
 
-class Home extends Component {
+export default class Home extends Component {
   constructor(props) {
     super(props);
 
@@ -66,4 +66,3 @@ class Home extends Component {
   }
 }
 
-export default Home;

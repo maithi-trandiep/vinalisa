@@ -1,21 +1,19 @@
 import React, { Component } from "react";
 
-class Counter extends Component {
+export default class Counter extends Component {
     constructor(props) {
       super(props);
       this.state = {
         quantity: 1,
         show: true,
-        max: 100,
-        min: 0
       };
     }
   
     incrementItem = () => {
-      this.props.increaseCounter();
+      this.props.incrementCounter();
 
       this.setState(prevState => {
-        if(prevState.quantity < 10) {
+        if(prevState.quantity < 100) {
           return {
             quantity: prevState.quantity + 1
           }
@@ -25,8 +23,8 @@ class Counter extends Component {
       });
     }
 
-    decreaseItem = () => {
-      this.props.decreaseCounter();
+    decrementItem = () => {
+      this.props.decrementCounter();
 
       this.setState(prevState => {
         if(prevState.quantity > 0) {
@@ -54,7 +52,7 @@ class Counter extends Component {
       return (
         <div className="counter input-group">
           <div className="input-group-prepend">
-          <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.decreaseItem}></button>
+          <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.decrementItem}></button>
           </div>
             <input className="inputcounter form-control" value={this.state.quantity} onChange={this.handleChange}/>
           <div className="input-group-append">
@@ -63,6 +61,4 @@ class Counter extends Component {
         </div>
       );
     }
-  }
-  
-export default Counter;
+}

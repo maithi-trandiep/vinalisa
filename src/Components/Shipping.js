@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavMenu from "./NavMenu";
 
-class Shipping extends Component {
+export default class Shipping extends Component {
     render() {
       return (
         <div className="Shipping">          
@@ -10,8 +10,19 @@ class Shipping extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8">
-                            <h3 className="ad-facture">Adresse de facturation</h3>
-                            <form className="form-shipping" action="#">
+                        <div className="accordion" id="accordionAddress">
+                            <div className="card">
+                                <div className="card-header" id="headingOne">
+                                <h2 className="mb-0">
+                                    <button className="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Adresse de facturation
+                                    </button>
+                                </h2>
+                                </div>
+
+                                <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionAddress">
+                                <div className="card-body">
+                                <form className="form-shipping" action="#">
                                     <div className="form-group row">
                                         <div className="col-sm-8">
                                             <label htmlFor="inputLName">Nom</label>
@@ -67,9 +78,20 @@ class Shipping extends Component {
                                         </div>
                                     </div>
                                 </form>
-
-                            <h3 className="ad-delivery">Adresse de livraison</h3>
-                            <form className="form-shipping" action="#">
+                                </div>
+                                </div>
+                            </div>
+                            <div className="card">
+                                <div className="card-header" id="headingTwo">
+                                <h2 className="mb-0">
+                                    <button className="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Adresse de livraison (si différente)
+                                    </button>
+                                </h2>
+                                </div>
+                                <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionAddress">
+                                <div className="card-body">
+                                <form className="form-shipping" action="#">
                                     <div className="form-group row">
                                         <div className="col-sm-8">
                                             <label htmlFor="inputLName">Nom</label>
@@ -125,13 +147,17 @@ class Shipping extends Component {
                                         </div>
                                     </div>
                                 </form>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
 
                         <div className="col-lg-4">
                             <div className="order-summary">
                                 <h3>Sommaire</h3>
                                     <h4>
-                                        <a data-toggle="collapse" href="#order-cart-section" className="accordion collapsed" role="button" aria-expanded="false" aria-controls="order-cart-section">2 produits dans le panier</a>
+                                        <a data-toggle="collapse" href="#order-cart-section" className="accordion collapsed" id="accordionSummary" role="button" aria-expanded="false" aria-controls="order-cart-section">2 produits dans le panier</a>
                                     </h4>
                                     <div className="collapse" id="order-cart-section">
                                         <table className="table table-mini-cart">
@@ -176,6 +202,8 @@ class Shipping extends Component {
                         </div>
                     </div>
 
+                    <br/>
+                    
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="action-shipping">
@@ -188,6 +216,5 @@ class Shipping extends Component {
         </div>
       );
     }
-  }
+}
   
-  export default Shipping;

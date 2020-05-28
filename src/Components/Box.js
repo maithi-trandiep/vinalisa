@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import ModalConfirmCart from "./ModalConfirmCart";
 
-class Box extends Component {
+export default class Box extends Component {
   render(){
     return (
       <div className="box">
@@ -25,5 +25,3 @@ class Box extends Component {
     );
   }
 }
-
-export default Box;

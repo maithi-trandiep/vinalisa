@@ -15,10 +15,6 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    // get and set currently logged in user to state
-  }
-
   render() {
     return (
       <div className="App">
