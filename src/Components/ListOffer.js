@@ -7,12 +7,16 @@ import ModalOffer from "./ModalOffer";
 
 
 class ListOffer extends Component {
-  handleClick = (id)=>{
+  constructor(props) {
+    super(props);
+  }
+
+  handleClick = (id) => {
     this.props.addToCart(id); 
   }
   
   render(){
-    let itemList = this.props.items.map((item, idx) =>{
+    let itemList = this.props.items.map((item, idx) => {
       return (
         <div className="col-lg-4 col-sm-6 mb-4" key={idx}>
           <Box id={`box${idx+1}`} id={item.id} modalHref={`#modalVin${idx+1}`} title={item.title} description={`€${item.price}`} imgUrl={item.imgUrl} addToCart={()=>{this.handleClick(item.id)}} />
@@ -41,9 +45,9 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch)=> {
+const mapDispatchToProps = (dispatch) => {
   return {
-    addToCart: (id)=>{dispatch(addToCart(id))}
+    addToCart: (id) => {dispatch(addToCart(id))}
   }
 }
 

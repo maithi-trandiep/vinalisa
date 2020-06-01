@@ -105,7 +105,7 @@ class Cart extends Component {
                     </table>
 
                     <div className="checkout-methods">
-                      <a href="/livraison" className="btn btn-block btn-sm btn-primary">Passer commande</a>
+                      <Link to="/livraison" className="btn btn-block btn-primary btn-md text-uppercase">Passer commande</Link>
                     </div>
                 </div>
               </div>
@@ -117,19 +117,19 @@ class Cart extends Component {
   }
 }
 
-const mapStateToProps = (state)=>{
+const mapStateToProps = (state) => {
   return{
       items: state.addedItems,
       total: state.total
   }
 }
 
-const mapDispatchToProps= (dispatch)=>{
+const mapDispatchToProps= (dispatch) => {
   return {
-    addQuant: (id)=>{dispatch(addQuantity(id))},
-    subtractQuant: (id)=>{dispatch(subtractQuantity(id))},
-    removeAll: (id)=>{dispatch(removeAll())},
-    removeItem: (id)=>{dispatch(removeItem(id))}
+    addQuant: (id) => {dispatch(addQuantity(id))},
+    subtractQuant: (id) => {dispatch(subtractQuantity(id))},
+    removeAll: () => {dispatch(removeAll())},
+    removeItem: (id) => {dispatch(removeItem(id))}
   }
 }
 
