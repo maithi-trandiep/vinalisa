@@ -38,9 +38,26 @@ class Cart extends Component {
       ) :  <tr><td colSpan="5"><p style={{textAlign: "center"}}>Panier vide.</p></td></tr>;
     
     return (
-      <div className="Cart">          
+      <div className="Cart">
+        <header className="nav-menu">          
         <NavMenu />
-        <div className="section-cart">
+        </header>
+        <main className="main">
+          <div className="section-breadcrumb">
+            <div className="container">
+                <nav aria-label="breadcrumb" className="breadcrumb-nav mb-2">
+                <div className="container">
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/home">Accueil</Link></li>
+                        <li className="breadcrumb-item"><Link to="/offres">Offres</Link></li>
+                        <li className="breadcrumb-item active" aria-current="page">Panier</li>
+                    </ol>
+                </div>
+                </nav>
+            </div>
+          </div>
+
+          <div className="section-cart">
           <div className="container">
             <div className="row">
               <div className="col-lg-8">
@@ -88,12 +105,12 @@ class Cart extends Component {
 
                         <tr>
                           <td>TVA</td>
-                          <td>€0.00</td>
+                          <td>€0</td>
                         </tr>
 
                         <tr>
                           <td>Frais de livraison</td>
-                          <td>€0.00</td>
+                          <td>€0</td>
                         </tr>
                       </tbody>
                       <tfoot>
@@ -112,6 +129,7 @@ class Cart extends Component {
             </div>
           </div>
         </div>
+        </main>
       </div>
     );
   }

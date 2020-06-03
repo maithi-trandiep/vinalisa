@@ -7,11 +7,6 @@ import Shipping from "./Shipping";
 
 import { userContext } from "../userContext";
 
-// The Main component renders one of the three provided
-// Routes (provided that one matches). Both the /roster
-// and /schedule routes will match any pathname that starts
-// with /roster or /schedule. The / route will only match
-// when the pathname is exactly the string "/"
 const Main = () => (
   <userContext.Consumer>
     {(value) =>
@@ -19,8 +14,8 @@ const Main = () => (
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/home' component={Home}/>
-          <Route path='/about' component={Home}/>
-          <Route path='/history' component={Home}/>
+          <Route path='/apropos' component={Home}/>
+          <Route path='/histoire' component={Home}/>
           <Route path='/gallery' component={Home}/>
           <Route path='/contact' component={Home}/>
           <Route path='/offres' component={() => <Offer user={value} />} />

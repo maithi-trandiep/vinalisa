@@ -7,7 +7,7 @@ export default class Navbar extends Component {
         <div className="container">
           <div className="masthead-subheading">Vins artisanaux</div>
           <div className="masthead-heading text-uppercase">Vinalisa</div>
-          <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">En savoir plus</a>
+          <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#apropos">En savoir plus</a>
         </div>
       </header>
     );

@@ -45,11 +45,11 @@ export default class Home extends Component {
 
           <About
             title="A propos"
-            id="about"
+            id="apropos"
           />
           <History
             title="Histoire"
-            id="history"
+            id="histoire"
           />
           <GalleryVin
             title="Gallery Vin"

@@ -43,7 +43,7 @@ export default class Counter extends Component {
       });
     }
 
-    handleChange = (event) => {
+    changeHandler = (event) => {
       this.setState({quantity: event.target.value});
     }
   
@@ -54,7 +54,7 @@ export default class Counter extends Component {
           <div className="input-group-prepend">
           <button className="btn btn-dark btn-sm fa fa-minus fa-inverse fa-2x" onClick={this.decrementItem}></button>
           </div>
-            <input className="inputcounter form-control" value={this.state.quantity} onChange={this.handleChange}/>
+            <input className="inputcounter form-control" value={this.state.quantity} onChange={this.changeHandler}/>
           <div className="input-group-append">
             <button className="btn btn-dark btn-sm fa fa-plus fa-inverse fa-2x" onClick={this.incrementItem}></button>
           </div>

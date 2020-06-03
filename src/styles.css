@@ -26,11 +26,20 @@
 }
 
 .section-cart {
-  padding-top: 150px;
+  padding-top: 10px;
 }
 
 .section-shipping {
-  padding-top: 150px;
+  padding-top: 10px;
+}
+
+.section-breadcrumb {
+  padding-top: 140px;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 1rem 0;
 }
 
 .signup-form,

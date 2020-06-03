@@ -17,7 +17,7 @@ export default class NavMenu extends Component {
                 <li className="nav-item">
                   <RouterDom.Link
                     className="nav-link"
-                    to="/about"
+                    to="/apropos"
                   >
                     À propos
                   </RouterDom.Link>
@@ -25,7 +25,7 @@ export default class NavMenu extends Component {
                 <li className="nav-item">
                   <RouterDom.Link
                     className="nav-link"
-                    to="/history"
+                    to="/histoire"
                   >
                     Histoire
                   </RouterDom.Link>

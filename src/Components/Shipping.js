@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import NavMenu from "./NavMenu";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+
 
 class Shipping extends Component {
     constructor (props) {
@@ -27,11 +29,11 @@ class Shipping extends Component {
         };
     }
 
-    changeHandler = e => {
+    changeHandler = (e) => {
         this.setState({ [e.target.name]: e.target.value })
     }
 
-    submitHandler = e => {
+    submitHandler = (e) => {
         e.preventDefault();
         
         console.log(this.state)
@@ -60,9 +62,26 @@ class Shipping extends Component {
         });
 
         return (
-            <div className="Shipping">          
+            <div className="Shipping">
+                <header className="nav-menu">          
                 <NavMenu />
-                <div className="section-shipping">
+                </header>
+                <main className="main">
+                    <div className="section-breadcrumb">
+                        <div className="container">
+                            <nav aria-label="breadcrumb" className="breadcrumb-nav mb-2">
+                            <div className="container">
+                                <ol className="breadcrumb">
+                                    <li className="breadcrumb-item"><Link to="/home">Accueil</Link></li>
+                                    <li className="breadcrumb-item"><Link to="/panier">Panier</Link></li>
+                                    <li className="breadcrumb-item active" aria-current="page">Livraison</li>
+                                </ol>
+                            </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div className="section-shipping">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8">
@@ -147,7 +166,7 @@ class Shipping extends Component {
                                     </div>
                                     <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionAddress">
                                     <div className="card-body">
-                                    <form className="form-shipping" id="form-shipping">
+                                    <form className="form-ship" id="form-ship">
                                         <div className="form-group row">
                                             <div className="col-sm-8">
                                                 <label htmlFor="LNameShipping">Nom</label>
@@ -230,13 +249,14 @@ class Shipping extends Component {
                         
                         <div className="row">
                             <div className="col-lg-8">
-                                <div className="action-shipping">
-                                <button onClick={this.submitHandler} className="btn btn-primary btn-md text-uppercase" id="sendAdressButton">Confirmer</button>
+                                <div className="checkout-action">
+                                <button onClick={this.submitHandler} className="btn btn-primary btn-md btn-confirm text-uppercase" id="sendAdressButton">Confirmer</button>
                                 </div>
                             </div>
                         </div>
                     </div> 
                 </div>
+                </main>
             </div>
         );
     }
