@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-
-import Navbar from "./Navbar";
-import About from "./About";
-import Header from "./Header";
-import History from "./History";
-import Contact from "./Contact";
-import ModalLogin from "./ModalLogin";
-import GalleryVin from "./GalleryVin";
+import React, { Component } from 'react';
+import Navbar from './Navbar';
+import About from './About';
+import Header from './Header';
+import History from './History';
+import Contact from './Contact';
+import ModalLogin from './ModalLogin';
+import GalleryVin from './GalleryVin';
 
 export default class Home extends Component {
   constructor(props) {

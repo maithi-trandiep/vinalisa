@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
-import * as RouterDom from "react-router-dom";
-import Dropdown from "./Dropdown";
+import React, { Component } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import * as RouterDom from 'react-router-dom';
+import Dropdown from './Dropdown';
 
 
 export default class Navbar extends Component {

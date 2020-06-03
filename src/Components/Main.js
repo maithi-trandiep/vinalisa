@@ -1,11 +1,10 @@
-import React from "react"
-import { Switch, Route } from "react-router-dom"
-import Home from "./Home";
-import Offer from "./Offer";
-import Cart from "./Cart";
-import Shipping from "./Shipping";
-
-import { userContext } from "../userContext";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Offer from './Offer';
+import Cart from './Cart';
+import Shipping from './Shipping';
+import { userContext } from '../userContext';
 
 const Main = () => (
   <userContext.Consumer>

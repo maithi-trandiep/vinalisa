@@ -1,10 +1,9 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import { removeItem, removeAll, addQuantity, subtractQuantity } from "../actions/cartActions";
-
-import NavMenu from "./NavMenu";
-import Counter from "./Counter";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { removeItem, removeAll, addQuantity, subtractQuantity } from '../actions/cartActions';
+import NavMenu from './NavMenu';
+import Counter from './Counter';
 
 class Cart extends Component {
   render() {

@@ -1,8 +1,7 @@
-import React, { Component } from "react";
-import NavMenu from "./NavMenu";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-
+import React, { Component } from 'react';
+import NavMenu from './NavMenu';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class Shipping extends Component {
     constructor (props) {

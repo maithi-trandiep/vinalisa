@@ -17,8 +17,8 @@ export default class GalleryVin extends Component {
         return (
             <div className="container page-section section-galleryvin" id={this.props.id}>
                 <div className="text-center">
-                    <h2 className="section-heading text-uppercase">Gallery Vin</h2>
-                    <h3 className="section-subheading text-muted">Nos galleries</h3>
+                    <h2 className="section-heading text-uppercase">Gallery</h2>
+                    <h3 className="section-subheading text-muted">Nos vins</h3>
                 </div>
                 <div className="">
                     <div id={"carouselCaptions"+this.props.id} className="carousel carousel-gallery slide" data-ride="carousel">

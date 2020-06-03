@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import NavMenu from "./NavMenu";
+import React, { Component } from 'react';
+import NavMenu from './NavMenu';
 
 class Login extends Component {
     render() {

@@ -1,8 +1,7 @@
-import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
-
-import NavMenu from "./NavMenu";
-import ListOffer from "./ListOffer";
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import NavMenu from './NavMenu';
+import ListOffer from './ListOffer';
 
 export default class Offer extends Component {
   constructor(props) {
