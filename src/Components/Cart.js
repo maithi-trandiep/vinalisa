@@ -21,7 +21,7 @@ class Cart extends Component {
                   <h2 className="product-title">
                     <a href="#">{item.title}</a>
                   </h2>
-                  <p className="h6">{item.date}</p>
+                  <span className="h6 date-shipping">{item.date}</span>
                 </td>
                 <td>€{item.price}</td>
                 <td>
@@ -100,11 +100,6 @@ class Cart extends Component {
                         <tr>
                           <td>Sous-total</td>
                           <td>€{this.props.total}</td>
-                        </tr>
-
-                        <tr>
-                          <td>TVA</td>
-                          <td>€0</td>
                         </tr>
 
                         <tr>
